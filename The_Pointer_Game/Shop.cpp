@@ -17,7 +17,7 @@ Menu& Menu::shopMenu()
         questSuccesful(menu_items, color_options, cursor_options);
     }
         system("cls");
-        std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð²Ð°ÑˆÐ¸Ñ… Ð¿Ð¾Ð¸Ð½Ñ‚Ð¾Ð²: " << getPoints() << std::endl;
+        std::cout << "Êîëè÷åñòâî âàøèõ ïîèíòîâ: " << getPoints() << std::endl;
         for (size_t i = 0; i < goods_options.size(); i++)
         {
             if (i == selected_good)
@@ -43,25 +43,29 @@ Menu& Menu::shopMenu()
                     case 0:  
                         if (is_miracle_pointer == true && points >= 9) 
                         {
+                            //goods_options.at(0).pop_back();
                             
-                            std::cout << "\nÐ’Ñ‹ ÐºÑƒÐ¿Ð¸Ð»Ð¸ ÑƒÐ½Ð¸ÐºÐ°Ð»ÑŒÐ½Ñ‹Ð¹ ÑƒÐºÐ°Ð·Ð°Ñ‚ÐµÐ»ÑŒ" << std::endl;
+                            std::cout << "\nÂû êóïèëè óíèêàëüíûé óêàçàòåëü" << std::endl;
 
                             points -= 9;
                             is_miracle_pointer = false;
 
                             cursor_options.push_back("-<x<o>>");
+                            
+                            
+                            //goods_options.erase(goods_options.begin() + 0);
 
                             questSuccesful(menu_items, color_options, cursor_options);
                         }
                         else
                         {
-                            std::cout << "Ð’Ñ‹ ÑƒÐ¶Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ð»Ð¸ ÑÑ‚Ð¾Ñ‚ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚" << std::endl;
+                            std::cout << "Âû óæå ïîêóïàëè ýòîò ïðåäìåò" << std::endl;
                         }
                         break;
                     case 1:
                         if (is_NotePad == true && points >= 3)
                         {
-                            std::cout << "\nÐ’Ñ‹ ÐºÑƒÐ¿Ð¸Ð»Ð¸ Ð±Ð»Ð¾ÐºÐ½Ð¾Ñ‚" << std::endl;
+                            std::cout << "\nÂû êóïèëè áëîêíîò" << std::endl;
 
                             points -= 3;
                             is_NotePad = false;
@@ -70,14 +74,14 @@ Menu& Menu::shopMenu()
                         }
                         else
                         {
-                            std::cout << "Ð’Ñ‹ ÑƒÐ¶Ðµ Ð¿Ð¾ÐºÑƒÐ¿Ð°Ð»Ð¸ ÑÑ‚Ð¾Ñ‚ Ð¿Ñ€ÐµÐ´Ð¼ÐµÑ‚" << std::endl;
+                            std::cout << "Âû óæå ïîêóïàëè ýòîò ïðåäìåò" << std::endl;
                         }
                         break;
                     case 2:  
-                        std::cout << "Ð’ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð¼Ñ‹ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÐ¼ Ð¿Ñ€Ð¾Ð´Ð°Ñ‚ÑŒ Ð²Ð°Ð¼ Ñ„Ñ€Ð°Ð³Ð¼ÐµÐ½Ñ‚ ÑÐ²Ð¾Ð»ÑŽÑ†Ð¸Ð¸." << std::endl;
+                        std::cout << "Â äàííûé ìîìåíò ìû íå ìîæåì ïðîäàòü âàì ôðàãìåíò ýâîëþöèè." << std::endl;
                         break;
                     default:
-                        std::cout << "Ð’ Ð´Ð°Ð½Ð½Ñ‹Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸ Ð²Ñ‹ Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚Ðµ ÐºÑƒÐ¿Ð¸Ñ‚ÑŒ ÑÑ‚Ð¾Ñ‚ Ñ‚Ð¾Ð²Ð°Ñ€." << std::endl;
+                        std::cout << "Â äàííûé ìîìåíò âðåìåíè âû íå ìîæåòå êóïèòü ýòîò òîâàð." << std::endl;
                 }
                 selected_item = 0;
                 is_set_good = false;
