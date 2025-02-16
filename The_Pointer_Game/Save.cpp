@@ -9,7 +9,7 @@ void Menu::saveSettings()
     {
         system("cls");
         
-        for (size_t i = 0; i < save_options.size(); i++)
+        for (int i = 0; i < save_options.size(); i++)
         {
             if (i == selected_setting)
             {
@@ -34,7 +34,7 @@ void Menu::saveSettings()
                     case 1: loadSave(menu_items, color_options, cursor_options, cursor, total_score); break;
                     default: std::cout << "da." << std::endl;
                 }
-                selected_item = 0; // Ñáðîñ âûäåëåíèÿ
+                selected_item = 0; // Ã‘Ã¡Ã°Ã®Ã± Ã¢Ã»Ã¤Ã¥Ã«Ã¥Ã­Ã¨Ã¿
                 is_set_save = false;
                 break;
             case 27: is_set_save = false; break;
@@ -82,7 +82,7 @@ void Menu::save()
     }
     else
     {
-        std::cout << "Îøèáêà ïîäêëþ÷åíèÿ ê ôàéëó" << std::endl;
+        std::cout << "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã¯Ã®Ã¤ÃªÃ«Ã¾Ã·Ã¥Ã­Ã¨Ã¿ Ãª Ã´Ã Ã©Ã«Ã³" << std::endl;
     }
 }
 
@@ -136,7 +136,7 @@ Menu& Menu::loadSave(std::vector<std::string>& _menu_items, std::vector<std::str
     }
     else
     {
-        std::cout << "Ôàéë ñîõðàíåíèÿ îòñóòñòâóåò" << std::endl;
+        std::cout << "Ã”Ã Ã©Ã« Ã±Ã®ÃµÃ°Ã Ã­Ã¥Ã­Ã¨Ã¿ Ã®Ã²Ã±Ã³Ã²Ã±Ã²Ã¢Ã³Ã¥Ã²" << std::endl;
     }
     
     system("color 7");
