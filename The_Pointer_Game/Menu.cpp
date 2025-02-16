@@ -2,10 +2,10 @@
 
 Menu::Menu()
 {
-    goods_options = {"-<x<o>> - 9 points", "Блокнот - 3 points", "Части для улучшения указателя (любого) - 25 points"};
-    save_options = {"Сохранить текущий прогресс", "Загрузить прогресс"};
-    menu_items = { "Настройки инверсии", "Просмотреть квест", "Настройки сохранения"};
-    color_options = { "Белый", "Зеленый" };
+    goods_options = {"-<x<o>> - 9 points", "Р‘Р»РѕРєРЅРѕС‚ - 3 points", "Р§Р°СЃС‚Рё РґР»СЏ СѓР»СѓС‡С€РµРЅРёСЏ СѓРєР°Р·Р°С‚РµР»СЏ (Р»СЋР±РѕРіРѕ) - 25 points"};
+    save_options = {"РЎРѕС…СЂР°РЅРёС‚СЊ С‚РµРєСѓС‰РёР№ РїСЂРѕРіСЂРµСЃСЃ", "Р—Р°РіСЂСѓР·РёС‚СЊ РїСЂРѕРіСЂРµСЃСЃ"};
+    menu_items = { "РќР°СЃС‚СЂРѕР№РєРё РёРЅРІРµСЂСЃРёРё", "РџСЂРѕСЃРјРѕС‚СЂРµС‚СЊ РєРІРµСЃС‚", "РќР°СЃС‚СЂРѕР№РєРё СЃРѕС…СЂР°РЅРµРЅРёСЏ"};
+    color_options = { "Р‘РµР»С‹Р№", "Р—РµР»РµРЅС‹Р№" };
     cursor_options = { "~>", "*" };
 
     cursor = "~> "; selected_item = 0, is_inverted = false; points = 0.0;
@@ -79,7 +79,7 @@ void Menu::executeOption(int option)
         case 4: setCursor(cursor); break;
         case 5: shopMenu(); break;
        
-        default: std::cout << "Данное меню пустое" << std::endl; break;
+        default: std::cout << "Р”Р°РЅРЅРѕРµ РјРµРЅСЋ РїСѓСЃС‚РѕРµ" << std::endl; break;
     }
     system("pause");
 }
