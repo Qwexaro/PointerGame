@@ -12,7 +12,7 @@ Menu& Menu::setColorConsole()
         if (getTotalScore() == 4) { questSuccesful(menu_items, color_options, cursor_options); }
 
         system("cls");
-        std::cout << "Âûáåðèòå öâåò:\n";
+        std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ Ñ†Ð²ÐµÑ‚:\n";
         for (size_t i = 0; i < color_options.size(); i++)
         {
             if (i == selected_color)
