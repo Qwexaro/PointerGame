@@ -8,7 +8,7 @@ Menu& Menu::setCursor(std::string& _cursor)
     while (is_set_cursor)
     {
         system("cls");
-        std::cout << "Âûáåðèòå êóðñîð:\n";
+        std::cout << "Ð’Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ ÐºÑƒÑ€ÑÐ¾Ñ€:\n";
         for (size_t i = 0; i < cursor_options.size(); i++)
         {
             if (i == selected_cursor)
@@ -41,7 +41,7 @@ Menu& Menu::setCursor(std::string& _cursor)
                     case 8: _cursor = "~% "; break;
                     case 9: _cursor = "~# "; break;
                 }
-                selected_item = 0; // Ñáðîñ âûäåëåíèÿ
+                selected_item = 0; // Ð¡Ð±Ñ€Ð¾Ñ Ð²Ñ‹Ð´ÐµÐ»ÐµÐ½Ð¸Ñ
                 is_set_cursor = false;
                 break;
             case 27: is_set_cursor = false; break;
