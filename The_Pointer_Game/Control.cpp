@@ -7,8 +7,8 @@ void Menu::control()
     while (is_control_running)
     {
         system("cls");
-        std::cout << "Èíâåðñèÿ: " << (is_inverted ? "Âêëþ÷åíà" : "Âûêëþ÷åíà") << std::endl;
-        std::cout << "1. Ïåðåêëþ÷èòü èíâåðñèþ\nEsc äëÿ âîçâðàòà." << std::endl;
+        std::cout << "Ð˜Ð½Ð²ÐµÑ€ÑÐ¸Ñ: " << (is_inverted ? "Ð’ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°" : "Ð’Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°") << std::endl;
+        std::cout << "1. ÐŸÐµÑ€ÐµÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒ Ð¸Ð½Ð²ÐµÑ€ÑÐ¸ÑŽ\nEsc Ð´Ð»Ñ Ð²Ð¾Ð·Ð²Ñ€Ð°Ñ‚Ð°." << std::endl;
 
         char ch = _getch();
         switch (ch) 
@@ -22,7 +22,7 @@ void Menu::control()
 void Menu::controlInversion(bool& _is_inverted)
 {
     is_inverted = !is_inverted;
-    std::cout << "Èíâåðñèÿ " << (is_inverted ? "âêëþ÷åíà" : "âûêëþ÷åíà") << std::endl;
+    std::cout << "Ð˜Ð½Ð²ÐµÑ€ÑÐ¸Ñ " << (is_inverted ? "Ð²ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°" : "Ð²Ñ‹ÐºÐ»ÑŽÑ‡ÐµÐ½Ð°") << std::endl;
     
     if (getTotalScore() == 1) questSuccesful(menu_items, color_options, cursor_options); 
 }
