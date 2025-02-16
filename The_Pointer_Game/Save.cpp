@@ -9,7 +9,7 @@ void Menu::saveSettings()
     {
         system("cls");
         
-        for (size_t i = 0; i < save_options.size(); i++)
+        for (int i = 0; i < save_options.size(); i++)
         {
             if (i == selected_setting)
             {
