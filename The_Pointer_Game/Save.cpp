@@ -34,7 +34,7 @@ void Menu::saveSettings()
                     case 1: loadSave(menu_items, color_options, cursor_options, cursor, total_score); break;
                     default: std::cout << "da." << std::endl;
                 }
-                selected_item = 0; // Сброс выделения
+                selected_item = 0; // Ñáðîñ âûäåëåíèÿ
                 is_set_save = false;
                 break;
             case 27: is_set_save = false; break;
@@ -82,7 +82,7 @@ void Menu::save()
     }
     else
     {
-        std::cout << "Ошибка подключения к файлу" << std::endl;
+        std::cout << "Îøèáêà ïîäêëþ÷åíèÿ ê ôàéëó" << std::endl;
     }
 }
 
@@ -136,10 +136,9 @@ Menu& Menu::loadSave(std::vector<std::string>& _menu_items, std::vector<std::str
     }
     else
     {
-        std::cout << "Файл сохранения отсутствует" << std::endl;
+        std::cout << "Ôàéë ñîõðàíåíèÿ îòñóòñòâóåò" << std::endl;
     }
     
     system("color 7");
-    cursor += " ";
     return *this;
 }
