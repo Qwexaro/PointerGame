@@ -43,7 +43,6 @@ Menu& Menu::shopMenu()
                     case 0:  
                         if (is_miracle_pointer == true && points >= 9) 
                         {
-                            //goods_options.at(0).pop_back();
                             
                             std::cout << "\nВы купили уникальный указатель" << std::endl;
 
@@ -51,9 +50,6 @@ Menu& Menu::shopMenu()
                             is_miracle_pointer = false;
 
                             cursor_options.push_back("-<x<o>>");
-                            
-                            
-                            //goods_options.erase(goods_options.begin() + 0);
 
                             questSuccesful(menu_items, color_options, cursor_options);
                         }

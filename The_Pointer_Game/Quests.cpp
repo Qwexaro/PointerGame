@@ -23,7 +23,7 @@ void Menu::quests()
     switch (getTotalScore())
     {
         case 0: std::cout << "Квест (открыть меню с квестами) выполнен!" << std::endl; break;
-        case 1: std::cout << "поменяйте инверсию" << std::endl; break;
+        case 1: std::cout << "Поменяйте инверсию" << std::endl; break;
         case 2: std::cout << "Нажмите на кнопку 'зеленый'" << std::endl; break;
         case 3: std::cout << "Поменяйте курсор на ~$" << std::endl; break;
         case 4: std::cout << "Нажмите на кнопку 'пурпурный'" << std::endl; break;
