@@ -2,10 +2,10 @@
 
 Menu::Menu()
 {
-    goods_options = {"-<x<o>> - 9 points", "–ë–ª–æ–∫–Ω–æ—Ç - 3 points", "–ß–∞—Å—Ç–∏ –¥–ª—è —É–ª—É—á—à–µ–Ω–∏—è —É–∫–∞–∑–∞—Ç–µ–ª—è (–ª—é–±–æ–≥–æ) - 25 points"};
-    save_options = {"–°–æ—Ö—Ä–∞–Ω–∏—Ç—å —Ç–µ–∫—É—â–∏–π –ø—Ä–æ–≥—Ä–µ—Å—Å", "–ó–∞–≥—Ä—É–∑–∏—Ç—å –ø—Ä–æ–≥—Ä–µ—Å—Å"};
-    menu_items = { "–ù–∞—Å—Ç—Ä–æ–π–∫–∏ –∏–Ω–≤–µ—Ä—Å–∏–∏", "–ü—Ä–æ—Å–º–æ—Ç—Ä–µ—Ç—å –∫–≤–µ—Å—Ç", "–ù–∞—Å—Ç—Ä–æ–π–∫–∏ —Å–æ—Ö—Ä–∞–Ω–µ–Ω–∏—è"};
-    color_options = { "–ë–µ–ª—ã–π", "–ó–µ–ª–µ–Ω—ã–π" };
+    goods_options = {"-<x<o>> - 9 points", "¡ÎÓÍÌÓÚ - 3 points", "◊‡ÒÚË ‰Îˇ ÛÎÛ˜¯ÂÌËˇ ÛÍ‡Á‡ÚÂÎˇ (Î˛·Ó„Ó) - 25 points"};
+    save_options = {"—Óı‡ÌËÚ¸ ÚÂÍÛ˘ËÈ ÔÓ„ÂÒÒ", "«‡„ÛÁËÚ¸ ÔÓ„ÂÒÒ"};
+    menu_items = { "Õ‡ÒÚÓÈÍË ËÌ‚ÂÒËË", "œÓÒÏÓÚÂÚ¸ Í‚ÂÒÚ", "Õ‡ÒÚÓÈÍË ÒÓı‡ÌÂÌËˇ"};
+    color_options = { "¡ÂÎ˚È", "«ÂÎÂÌ˚È" };
     cursor_options = { "~>", "*" };
 
     cursor = "~> "; selected_item = 0, is_inverted = false; points = 0.0;
@@ -79,7 +79,7 @@ void Menu::executeOption(int option)
         case 4: setCursor(cursor); break;
         case 5: shopMenu(); break;
        
-        default: std::cout << "–î–∞–Ω–Ω–æ–µ –º–µ–Ω—é –ø—É—Å—Ç–æ–µ" << std::endl; break;
+        default: std::cout << "ƒ‡ÌÌÓÂ ÏÂÌ˛ ÔÛÒÚÓÂ" << std::endl; break;
     }
     system("pause");
 }
