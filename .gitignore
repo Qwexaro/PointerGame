@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+
+.gitignore
+.gitattributes
+
 # User-specific files
 *.rsuser
 *.suo
@@ -362,5 +366,3 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /The_Pointer_Game/Save.txt
-.gitignore/
-.gitattributes/
